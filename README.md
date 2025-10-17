@@ -15,3 +15,4 @@ A simple and efficient web application for generating QR codes.
    ```bash
    git clone https://github.com/print-aash/QR-Generator.git
    cd QR-Generator
+DEMO LINK : https://qr-generator-ashu.netlify.app/
