@@ -13,7 +13,7 @@ document.querySelector("#reset-btn").addEventListener("click", () => {
 const btn = document.querySelector("#button").addEventListener("click", () => {
   userInput = input.value;
   if (!userInput) return alert("Please enter text");
-  const QR_URL = `http://api.qrserver.com/v1/create-qr-code/?data=${userInput}&size=100x100`;
+  const QR_URL = `https://api.qrserver.com/v1/create-qr-code/?data=${userInput}&size=100x100`;
   fetch(QR_URL)
     .then((res) => res.blob())
     .then((blob) => {
@@ -30,3 +30,4 @@ const btn = document.querySelector("#button").addEventListener("click", () => {
       console.log("Error", err);
     });
 });
+
