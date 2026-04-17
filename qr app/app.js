@@ -11,6 +11,7 @@ document.querySelector("#reset-btn").addEventListener("click", () => {
 });
 
 const btn = document.querySelector("#button").addEventListener("click", () => {
+    img.remove();
   userInput = input.value;
   if (!userInput) return alert("Please enter text");
   const QR_URL = `https://api.qrserver.com/v1/create-qr-code/?data=${userInput}&size=100x100`;
